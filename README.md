@@ -1,11 +1,17 @@
-# o-component-handler [![Build Status](https://travis-ci.org/Pearson-Higher-Ed/o-component-handler.svg)](https://travis-ci.org/Pearson-Higher-Ed/o-component-handler) [![Coverage Status](https://coveralls.io/repos/Pearson-Higher-Ed/o-component-handler/badge.svg?branch=master&service=github)](https://coveralls.io/github/Pearson-Higher-Ed/o-component-handler?branch=master)
+# component-handler [![Build Status](https://travis-ci.org/Pearson-Higher-Ed/component-handler.svg)](https://travis-ci.org/Pearson-Higher-Ed/component-handler) [![Coverage Status](https://coveralls.io/repos/Pearson-Higher-Ed/component-handler/badge.svg?branch=master&service=github)](https://coveralls.io/github/Pearson-Higher-Ed/component-handler?branch=master)
 
-Handles registration of new Origami components so that DOM upgrades are handled on page load and elements can be upgraded after initial page load.
+This is NOT intended for use as a standalone component, but rather a component library intended for building higher-order
+ components.
+
+Handles registration of new Pearson components so that DOM upgrades are handled on page load, and elements can be upgraded
+ after initial page load.
 
 ## Quick start
 
+	npm install @pearson-components/component-handler --save
+
 ```js
-const componentHandler = require('o-component-handler');
+const componentHandler = require('@pearson-components/component-handler');
 
 document.addEventListener('DOMContentLoaded', () => {
 	componentHandler.upgradeAllRegistered();
@@ -81,4 +87,3 @@ Origami components should register themselves with the component handler (see [e
 ## License
 
 This software is published by Pearson Education under the [MIT license](LICENSE).
-

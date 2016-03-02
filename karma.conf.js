@@ -1,7 +1,6 @@
 /*eslint-env node*/
 /*eslint strict:0*/
 
-const BowerPlugin = require('bower-webpack-plugin');
 const path = require('path');
 const cwd = process.cwd();
 
@@ -67,11 +66,6 @@ module.exports = (config) => {
 			resolve: {
 				root: [path.join(cwd, 'bower_components')]
 			},
-			plugins: [
-				new BowerPlugin({
-					includes:  /\.js$/
-				})
-			],
 			devtool: 'inline-source-map'
 		},
 
