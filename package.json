@@ -13,7 +13,8 @@
     "gen-changelog": "node ./npm_scripts/gen-changelog.js",
     "ci": "npm run coverage",
     "release": "node ./npm_scripts/release.js",
-    "version": "npm run gen-changelog && git add CHANGELOG.md"
+    "version": "npm run gen-changelog && git add CHANGELOG.md",
+    "postpublish": "npm access public && echo 'Set package scope to public!'"
   },
   "devDependencies": {
     "babel-core": "^5.8.25",

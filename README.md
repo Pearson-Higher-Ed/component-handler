@@ -8,7 +8,7 @@ Handles registration of new Pearson components so that DOM upgrades are handled 
 
 ## Quick start
 
-	npm install @pearson-components/component-handler --save
+	> npm install @pearson-components/component-handler --save
 
 ```js
 const componentHandler = require('@pearson-components/component-handler');
