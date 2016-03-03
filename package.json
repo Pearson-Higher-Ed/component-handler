@@ -1,6 +1,6 @@
 {
   "name": "@pearson-components/component-handler",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Handles registration of new Origami components so that DOM upgrades are handled on page load and elements can be upgraded after initial page load.",
   "main": "./main.js",
   "repository": {
