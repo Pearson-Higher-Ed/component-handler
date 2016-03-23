@@ -63,9 +63,6 @@ module.exports = (config) => {
 					}
 				]
 			},
-			resolve: {
-				root: [path.join(cwd, 'bower_components')]
-			},
 			devtool: 'inline-source-map'
 		},
 
@@ -128,7 +125,7 @@ module.exports = (config) => {
 				{
                     test: /\.js$/,
                     // include: path.resolve('src/js/'),
-                    exclude: /(test|node_modules|bower_components)/,
+                    exclude: /node_modules/,
                     loader: 'isparta'
                 }
 			]);

@@ -7,6 +7,10 @@
     "type": "git",
     "url": "https://github.com/Pearson-Higher-Ed/component-handler.git"
   },
+  "keywords": [
+    "pearson-components",
+    "component-handler"
+  ],
   "scripts": {
     "test": "./node_modules/karma/bin/karma start karma.conf.js",
     "coverage": "COVERAGE=1 ./node_modules/karma/bin/karma start karma.conf.js",
