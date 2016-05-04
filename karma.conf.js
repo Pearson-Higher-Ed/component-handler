@@ -31,7 +31,7 @@ module.exports = (config) => {
 
 		// list of files / patterns to load in the browser
 		files: [
-			'http://polyfill.webservices.ft.com/v1/polyfill.js?ua=safari/4',
+			'./node_modules/phantomjs-polyfill/bind-polyfill.js',
 			'test/*.test.js'
 		],
 
