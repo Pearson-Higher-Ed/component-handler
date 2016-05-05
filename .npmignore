@@ -1,7 +1,5 @@
 test
-build
 examples
 .travis.yml
 karma.conf.js
 npm_scripts
-npm-debug.log
